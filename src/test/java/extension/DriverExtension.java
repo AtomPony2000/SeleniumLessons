@@ -17,6 +17,5 @@ public class DriverExtension implements BeforeAllCallback, AfterAllCallback {
     @Override
     public void beforeAll(ExtensionContext extensionContext) throws Exception {
         getWebDriver();
-
     }
 }

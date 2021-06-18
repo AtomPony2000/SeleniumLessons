@@ -14,7 +14,6 @@ public class MainPageSteps {
         return this;
     }
 
-
     @Step("Грид: выбираем 'Командировки' в выпадающем списке")
     public MainPageSteps clickAssigment() {
         mainPage.assignmentClick();

@@ -1,10 +1,10 @@
 package project.pages;
 
-import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import project.BasePage;
 
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOf;
 
 public class MainPage extends BasePage {
@@ -31,7 +31,6 @@ public class MainPage extends BasePage {
     }
 
     public void checkSmth() {
-        Assertions.assertTrue(assignmentBtn.isDisplayed(), "Не отображается элемент");
-
+        assertTrue(assignmentBtn.isDisplayed(), "Не отображается элемент");
     }
 }
