@@ -24,12 +24,12 @@ public class DriverManager {
     }
 
     public static void initDriver() {
-        driver = new ChromeDriver();
         setProperty(properties.getProperty("WEB_DRIVER"), properties.getProperty("WEB_DRIVER_PATH"));
-        driver.get(properties.getProperty("HOSTNAME"));
+        driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(ofSeconds(10));
         driver.manage().timeouts().setScriptTimeout(ofMillis(500));
         driver.manage().window().maximize();
+        driver.get(properties.getProperty("HOSTNAME"));
     }
 
     public static void closeDriver() {
